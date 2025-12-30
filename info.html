@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+            nav {
+
+                background-color:bisque;
+                padding:10px;
+                text-align: center;
+            }
+            /* Das sind alle a in einem Nav */
+            nav a {
+                color:white;
+                text-decoration: none;
+                margin: 0 15px;
+                font-weight: bold;
+                
+
+            }
+            /* hover ist mit Mauszeiger drüberfahren */
+            nav a:hover {
+
+                text-decoration: underline;
+                background-color:aquamarine;
+                font-size:large;
+            }
+
+            #main {
+
+                width:80%;
+                display:flex;
+                flex-direction: column;
+                gap:10px;
+                text-align:center;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size:medium;
+                margin: 70px auto;
+
+
+            }
+            #untercontainer {
+
+                display:flex;
+                flex-direction: row;
+                gap:1%;
+                width:100%;
+            }
+
+            #links {
+
+                background-color:darkkhaki;
+                padding: 10px;
+                flex: 1;
+            }
+
+             #rechts {
+
+                background-color:aqua;
+                padding: 10px;
+                flex: 1;
+            }
+            /* alle h1 in der ID main */
+            #main h1 {
+
+                width:100%;
+                margin:0;
+            }
+            /* h1 mit der ID super */
+            h1#super {
+
+                color:blue;
+            }
+
+            footer {
+
+                margin-top:40px;
+                padding: 20px;
+                text-align:center;
+                color: #555;
+            }
+
+            footer a{
+
+                color:#333;
+                text-decoration: none;
+                margin: 0 10px;
+
+            }
+
+            footer a:hover{
+
+                text-decoration: underline;
+                background-color:aquamarine;
+                font-size:large;
+            }
+
+            #bild {
+
+                max-width: 400px;
+            }
+
+
+
+
+
+
+
+
+
+
+        </style>
+    </head>
+    <body>
+
+        <div id="main">
+            <!--Jetzt kommt die Navbar-->
+            <nav>
+                 <a href="index.html">Home</a>
+                <a href="info.html">Info</a>
+                <a href="kontakt.html">Kontakt</a>
+            </nav>
+            <h1 id="super">Das ist die Infoseite
+
+            </h1>
+            <div id="untercontainer">
+                <div id="links">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Aperiam sequi in eos id incidunt, aut blanditiis facere,
+                        dolore illo sapiente voluptates vitae ex excepturi nobis
+                        illum quia cum dignissimos nam.</p>
+                </div>
+                <div id="rechts">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Totam vel error quidem odio hic sit illo aspernatur odit
+                        voluptas natus fugit provident officiis, soluta
+                        repudiandae nesciunt repellendus nostrum rerum
+                        consectetur.</p>
+                    <p><img src="frosch.jpg" alt="frosch" id="bild"></p>
+
+                </div>
+            </div>
+            <footer>
+                <a href="'">Impressum</a>
+                <a href="'">AGB</a>
+            </footer>
+        </div>
+
+    </body>
+</html>
